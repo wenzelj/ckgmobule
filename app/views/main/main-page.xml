@@ -1,0 +1,60 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" loaded="pageLoaded">
+  
+   <StackLayout>
+        <Button text="enable Location" tap="enableLocationTap"/>
+    </StackLayout>
+
+  <TabView>
+    <TabView.items>
+      <TabViewItem title="Adverts">
+        <TabViewItem.view>
+          <StackLayout class="tab-content">
+           <!--  <Label text="Available Adverts" class="title"/>
+            <Label text="This is adverts for this area." textWrap="true"/> -->
+            <Label text="{{myLocation.latitude}}"/>
+            <GridLayout rows="auto, *">
+             <!--  <Label text="Local Adverts" class="title" /> -->
+
+
+<!--  <Repeater items="{{ items }}">
+    <Repeater.itemTemplate>
+        <ScrollView>
+          <Label text="{{item.index}}"/>
+         <Image src="{{ src }}" />
+         </ScrollView>
+    </Repeater.itemTemplate>
+ </Repeater>
+ -->
+ 
+
+              <ListView items="{{ items }}" itemTap="listViewItemTap" row="1">
+                <ListView.itemTemplate>
+     
+                   <Image src="{{ src }}" />
+                   
+                </ListView.itemTemplate>
+              </ListView>
+             
+            </GridLayout>
+          </StackLayout>
+        </TabViewItem.view>
+      </TabViewItem>
+      <TabViewItem title="About CKG">
+        <TabViewItem.view>
+          <StackLayout class="tab-content">
+    <!--         <Label text="CKG CONSULTING is a Business & Management Consulting Company in the Business Consulting Field." class="title"/> -->
+    <TextView text="CKG CONSULTING is a Business and Management Consulting Company."/>
+            <Label text="Contact:"/>
+            <Label text="Gerrie Kirton
+Cell: 063 685 3571
+Fax: 086 732 5806
+
+Chantal Kirton
+Cell: 016 429 2483
+Fax: 086 732 5806" textWrap="true"/>
+          </StackLayout>
+        </TabViewItem.view>
+      </TabViewItem>
+    </TabView.items>
+  </TabView>
+</Page>

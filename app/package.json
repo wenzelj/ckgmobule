@@ -1,0 +1,53 @@
+{
+  "name": "tns-template-tab-navigation",
+  "main": "app.js",
+  "version": "2.0.0",
+  "author": {
+    "name": "Telerik",
+    "email": "support@telerik.com"
+  },
+  "description": "Nativescript tab-navigation project template",
+  "license": "BSD",
+  "keywords": [
+    "telerik",
+    "mobile",
+    "nativescript",
+    "{N}",
+    "tns",
+    "appbuilder",
+    "template"
+  ],
+  "repository": {
+    "url": "https://github.com/NativeScript/NativeScript/commit/5a56e1cc94b698784a7f004f1b9634e64324e5c6"
+  },
+  "_id": "tns-template-tab-navigation@2.0.0",
+  "_shasum": "2a35b6e63c9e249bf13287209e8690deedc04926",
+  "_resolved": "https://registry.npmjs.org/tns-template-tab-navigation/-/tns-template-tab-navigation-2.0.0.tgz",
+  "_from": "tns-template-tab-navigation@latest",
+  "scripts": {},
+  "_npmVersion": "3.8.3",
+  "_nodeVersion": "5.10.0",
+  "_npmUser": {
+    "name": "erjangavalji",
+    "email": "erjan.gavalji@gmail.com"
+  },
+  "dist": {
+    "shasum": "2a35b6e63c9e249bf13287209e8690deedc04926",
+    "tarball": "https://registry.npmjs.org/tns-template-tab-navigation/-/tns-template-tab-navigation-2.0.0.tgz"
+  },
+  "maintainers": [
+    {
+      "name": "enchev",
+      "email": "vladimir.enchev@gmail.com"
+    },
+    {
+      "name": "erjangavalji",
+      "email": "erjan.gavalji@gmail.com"
+    }
+  ],
+  "_npmOperationalInternal": {
+    "host": "packages-12-west.internal.npmjs.com",
+    "tmp": "tmp/tns-template-tab-navigation-2.0.0.tgz_1461745040321_0.7800264810211957"
+  },
+  "directories": {}
+}

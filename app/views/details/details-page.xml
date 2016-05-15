@@ -1,0 +1,10 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd"
+      xmlns:app="."
+      navigatedTo="pageNavigatedTo">
+<!--   <app:details-view /> -->
+<StackLayout  xmlns="http://schemas.nativescript.org/tns.xsd">
+<!--   <Label text="{{ title }}" class="detail-title"/> -->
+<!--   <Label text="{{ info }}" class="info" textWrap="true"/> -->
+  <Image  src="{{ voucher }}" stretch="aspectFit" />
+</StackLayout>
+</Page>
