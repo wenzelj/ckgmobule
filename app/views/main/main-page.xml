@@ -30,7 +30,7 @@
               <ListView items="{{ items }}" itemTap="listViewItemTap" row="1">
                 <ListView.itemTemplate>
      
-                   <Image src="{{ src }}" />
+                   <Image src="{{ image }}" />
                    
                 </ListView.itemTemplate>
               </ListView>
@@ -42,16 +42,14 @@
       <TabViewItem title="About CKG">
         <TabViewItem.view>
           <StackLayout class="tab-content">
-    <!--         <Label text="CKG CONSULTING is a Business & Management Consulting Company in the Business Consulting Field." class="title"/> -->
-    <TextView text="CKG CONSULTING is a Business and Management Consulting Company."/>
+            <Label text="CKG CONSULTING is a Business and Management Consulting Company."/>
             <Label text="Contact:"/>
-            <Label text="Gerrie Kirton
-Cell: 063 685 3571
-Fax: 086 732 5806
-
-Chantal Kirton
-Cell: 016 429 2483
-Fax: 086 732 5806" textWrap="true"/>
+            <Label text="Gerrie Kirton" textWrap="true"/>
+            <Label text="Cell: 063 685 3571" />
+            <Label text="Fax: 086 732 5806" />
+            <Button text="Website" tap="website" />
+            <Button text="FaceBook Page" tap="facebook" />
+           
           </StackLayout>
         </TabViewItem.view>
       </TabViewItem>

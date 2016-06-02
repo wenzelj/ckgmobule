@@ -1,6 +1,7 @@
 var frames = require("ui/frame");
 var platform = require("platform");
 var vmModule = require("./main-view-model");
+var utilityModule = require("utils/utils");
 
 var twoPaneLayout = Math.min(platform.screen.mainScreen.widthDIPs, platform.screen.mainScreen.heightDIPs) > 600;
 function pageLoaded(args) {
@@ -8,6 +9,16 @@ function pageLoaded(args) {
     page.bindingContext = vmModule.mainViewModel;
 }
 exports.pageLoaded = pageLoaded;
+
+exports.website = function() {
+    console.log('launch website');
+    utilityModule.openUrl("https://www.ckgconsulting.co.za/");
+}
+exports.facebook = function() {
+    console.log('launch facebook');
+    utilityModule.openUrl("https://www.facebook.com/people/Gerrie-Kirton/100009234595792");
+}
+
 function listViewItemTap(args) {
     if (!twoPaneLayout) {
         frames.topmost().navigate("views/details/details-page");
