@@ -42,9 +42,9 @@
       <TabViewItem title="About CKG">
         <TabViewItem.view>
           <StackLayout class="tab-content">
-            <Label text="CKG CONSULTING is a Business and Management Consulting Company."/>
+            <Label text="CKG CONSULTING is a Business and Management Consulting Company." textWrap="true"/>
             <Label text="Contact:"/>
-            <Label text="Gerrie Kirton" textWrap="true"/>
+            <Label text="Gerrie Kirton" />
             <Label text="Cell: 063 685 3571" />
             <Label text="Fax: 086 732 5806" />
             <Button text="Website" tap="website" />
