@@ -3,7 +3,7 @@
    <StackLayout>
         <Button text="enable Location" tap="enableLocationTap"/>
     </StackLayout>
-
+   
   <TabView>
     <TabView.items>
       <TabViewItem title="Adverts">
@@ -11,7 +11,8 @@
           <StackLayout class="tab-content">
            <!--  <Label text="Available Adverts" class="title"/>
             <Label text="This is adverts for this area." textWrap="true"/> -->
-            <Label text="{{myLocation.latitude}}"/>
+            <!--<Label text="{{myLocation.latitude}}"/>-->
+        
             <GridLayout rows="auto, *">
              <!--  <Label text="Local Adverts" class="title" /> -->
 
@@ -25,13 +26,11 @@
     </Repeater.itemTemplate>
  </Repeater>
  -->
- 
-
+     <Button text="Get my local deals" tap="deals" />
+    
               <ListView items="{{ items }}" itemTap="listViewItemTap" row="1">
                 <ListView.itemTemplate>
-     
-                   <Image src="{{ image }}" />
-                   
+                  <Image src="{{ image }}" />
                 </ListView.itemTemplate>
               </ListView>
              
