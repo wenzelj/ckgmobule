@@ -26,14 +26,18 @@
     </Repeater.itemTemplate>
  </Repeater>
  -->
+ 
+    <StackLayout class="tab-actions">
      <Button text="Get my local deals" tap="deals" />
-    
+                    <Label id="LabelMessage" text="" />
+                    {{iniqueId}}
+      </StackLayout>
               <ListView items="{{ items }}" itemTap="listViewItemTap" row="1">
                 <ListView.itemTemplate>
                   <Image src="{{ image }}" />
                 </ListView.itemTemplate>
               </ListView>
-             
+
             </GridLayout>
           </StackLayout>
         </TabViewItem.view>
